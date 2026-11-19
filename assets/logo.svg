@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+  <!-- Ring + 2-o'clock segment. Angles measured from the 512px marketing icon. -->
+  <circle
+    cx="24"
+    cy="24"
+    r="20.15"
+    stroke="#3c83f6"
+    stroke-width="7.7"
+    stroke-linecap="butt"
+    stroke-dasharray="106.91 19.69"
+    stroke-dashoffset="-125.9"
+  />
+  <circle
+    cx="24"
+    cy="24"
+    r="20.15"
+    stroke="#3c83f6"
+    stroke-width="7.7"
+    stroke-linecap="butt"
+    stroke-dasharray="9.85 116.76"
+    stroke-dashoffset="-111.13"
+  />
+</svg>
