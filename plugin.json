@@ -1,0 +1,46 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "loopvoice",
+  "version": "1.0.0",
+  "description": "Ask about your LoopVoice AI calls and texts: recovered revenue, call outcomes, shopper objections and campaign health.",
+  "author": {
+    "name": "LoopVoice",
+    "url": "https://loopvoice.ai"
+  },
+  "homepage": "https://loopvoice.ai/mcp",
+  "license": "MIT",
+  "keywords": [
+    "ecommerce",
+    "voice ai",
+    "abandoned cart",
+    "shopify",
+    "sms"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "LoopVoice",
+        "shortDescription": "Ecommerce voice AI results",
+        "longDescription": "LoopVoice runs AI voice calls and texts for online stores: abandoned-checkout recovery, post-purchase follow-ups and a support line that answers shoppers. This plugin connects ChatGPT to your LoopVoice workspace so you can ask about it in plain language:\n\n- How much revenue LoopVoice recovered last week, and which automations drove it\n- Which calls went to voicemail or failed, and why\n- The objections shoppers raise before they decide not to buy\n- Whether a campaign is healthy, and what is blocking it\n- Your plan, credits, store connection and anything that would stop calls\n\nEach connection is bound to the one workspace you pick when you sign in with your LoopVoice account. Shopper names, numbers and emails are masked unless an admin grants contact details. Transcripts are treated as untrusted shopper speech, and call recordings never leave LoopVoice; answers link back to the app.\n\nIt reads by default. A workspace admin can allow it to make changes too, such as pausing a campaign or adding a number to Do Not Call; risky changes show a preview and wait for a yes. It never places a call: launching campaigns, test calls and enrolling shoppers happen inside LoopVoice.",
+        "developerName": "LoopVoice",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://loopvoice.ai/mcp",
+        "supportURL": "https://help.loopvoice.ai",
+        "privacyPolicyURL": "https://loopvoice.ai/privacy",
+        "termsOfServiceURL": "https://loopvoice.ai/terms",
+        "defaultPrompt": [
+          "How did LoopVoice do last week? What drove the recovered revenue?",
+          "Which calls went to voicemail or failed yesterday, and why?",
+          "Is my abandoned-cart campaign healthy? Is anything blocking it?"
+        ],
+        "brandColor": "#1E88F0",
+        "composerIcon": "./assets/logo.svg",
+        "logo": "./assets/logo.svg"
+      }
+    }
+  },
+  "repository": "https://github.com/Loop-Voice-AI/loopvoice-mcp"
+}
